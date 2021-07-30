@@ -12,11 +12,16 @@
    src: url(awesomefont-webfont.woff2);
 }
 
-p {
-   font-family: CustomIconsFont;
+@font-face {
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
 }
 
-.test {
+p {
+   font-family: myFirstFont;
+}
+
+h1::after {
     content: '\e90e';
     font-family:  "CustomIconsFont", "AwesomeFont";
     font-size: 20px;
@@ -27,11 +32,7 @@ p {
 </head>
 <body>
 
-<h1>The @font-face Rule</h1>
-
-<div class="test">
-With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
-</div>
+<h1>Rule</h1>
 
 
 <p><b>Note:</b> Internet Explorer 8 and earlier, do not support the @font-face rule.</p>

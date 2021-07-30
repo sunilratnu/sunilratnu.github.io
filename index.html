@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+@font-face {
+   font-family: CustomIconsFont;
+   src: url(CustomIcons.woff);
+}
+
+@font-face {
+   font-family: AwesomeFont;
+   src: url(awesomefont-webfont.woff2);
+}
+
+p {
+   font-family: CustomIconsFont;
+}
+
+.test {
+    content: '\e90e';
+    font-family:  "CustomIconsFont", "AwesomeFont";
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>The @font-face Rule</h1>
+
+<div class="test">
+With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.
+</div>
+
+
+<p><b>Note:</b> Internet Explorer 8 and earlier, do not support the @font-face rule.</p>
+
+</body>
+</html>
